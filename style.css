@@ -1,0 +1,43 @@
+*{box-sizing:border-box}
+body{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;background:#0f172a;color:#f1f5f9}
+.container{width:100%;max-width:700px;margin:auto;padding:18px}
+.header{text-align:center;margin-bottom:20px}
+.header h1{margin:0;font-size:30px}
+.header p{margin-top:7px;color:#94a3b8;font-size:14px}
+.card{background:#1e293b;border:1px solid #334155;border-radius:15px;padding:17px;margin-bottom:15px}
+.card h3{margin-top:0;margin-bottom:18px;font-size:18px}
+.status-card{display:flex;align-items:center;justify-content:space-between}
+.small-title{font-size:11px;color:#94a3b8;letter-spacing:1px}
+.status-card h2{margin:7px 0 0;font-size:22px}
+.status-indicator{width:20px;height:20px;border-radius:50%}
+.status-indicator.stopped{background:#64748b}
+.status-indicator.running{background:#22c55e}
+.status-indicator.emergency{background:#ef4444}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stat-card span{display:block;color:#94a3b8;font-size:12px}
+.stat-card strong{display:block;margin-top:8px;font-size:17px}
+.setting,.filter,.market-row{display:flex;align-items:center;justify-content:space-between}
+.setting{margin:13px 0}
+.setting label{color:#cbd5e1;font-size:14px}
+.setting input{width:125px;padding:10px;border-radius:8px;border:1px solid #475569;background:#0f172a;color:white;font-size:14px}
+.filter{padding:10px 0;border-bottom:1px solid #334155}
+.filter:last-child{border-bottom:none}
+.filter input{width:20px;height:20px}
+.button-section{display:grid;gap:10px;margin-bottom:15px}
+button{width:100%;border:none;border-radius:10px;padding:15px;font-size:15px;font-weight:bold;cursor:pointer}
+button:active{transform:scale(.98)}
+.green-button{background:#22c55e;color:#052e16}
+.gray-button{background:#475569;color:white}
+.red-button{background:#ef4444;color:white}
+.blue-button{background:#3b82f6;color:white}
+.connection-box{padding:13px;background:#0f172a;border-radius:9px;margin-bottom:12px;color:#94a3b8;font-size:13px}
+.market-row{padding:11px 0;border-bottom:1px solid #334155}
+.market-row:last-child{border-bottom:none}
+.market-row span{color:#94a3b8}
+.activity-log{min-height:130px;max-height:250px;overflow-y:auto;padding:10px;border-radius:10px;background:#0f172a;font-family:monospace;font-size:12px}
+.log-entry{padding:7px 0;border-bottom:1px solid #1e293b}
+.log-time{color:#64748b}
+footer{text-align:center;padding:12px;color:#64748b}
+footer p{margin:4px}
+footer small{font-size:10px}
+@media(max-width:480px){.container{padding:12px}.stats-grid{grid-template-columns:1fr}.header h1{font-size:26px}.setting input{width:110px}}
